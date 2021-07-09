@@ -24,7 +24,7 @@ Table of Contents
    * [Print both keys and values with .items() method](#print-both-keys-and-values-with-items-method)
    * [Looping is slightly different then lists because dictionaries are concerned with pairs (Key : Value)](#looping-is-slightly-different-then-lists-because-dictionaries-are-concerned-with-pairs-key--value)
    * [How to loop through keys AND values](#how-to-loop-through-keys-and-values)
-* [Test Your understanding](#test-your-understanding)
+* [Test Your Understanding](#test-your-understanding)
 
 # Terminology
 
@@ -340,7 +340,7 @@ Year :  2012
 Colors :  ['black', 'white', 'red']
 ```
 
-# Test Your understanding
+# Test Your Understanding
 Which of the following are true of Python dictionaries:
 - A dictionary can contain any object type except another dictionary.
 - Dictionaries can be nested to any depth.
