@@ -30,16 +30,17 @@ Table of Contents
 
 Dictionaries are collections of key-value pairs. The *Keys* are unique. Dictionaries are useful when we want to access list of items that are related by a piece of data; the *key* in this case.
 
-Dictionaries are also called associative arrays, maps, and tables. Usually they are implemented using hashing to achieve the fastest performance.
+Dictionaries are also called associative arrays, maps, and tables. Usually they are implemented using hashing to achieve the best performance.
 
 # Key/Value pairs definition
 A key-value pair contains two parts:
 - keyword that identify a set of associated values.
 - and value associated with that key.
 
-In fact, the naming dictionary is taken from the physical dictionary in which we look up for a  word's definition.
+In fact, the naming, dictionary, is taken from the physical dictionary in which we look up for a  word's definition.
 A word in this physical dictionary is the *key*. And the definition is the *value*.   
 
+![dict](1.jpg)
 
 Let us go ahead with some dictionary example to represent a car:
 # { }, Dict notation, curly braces
