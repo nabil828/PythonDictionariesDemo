@@ -22,7 +22,7 @@ Table of Contents
    * [Print all keys with .keys() method](#print-all-keys-with-keys-method)
    * [Print all values with .values() method](#print-all-values-with-values-method)
    * [Print both keys and values with .items() method](#print-both-keys-and-values-with-items-method)
-   * [Looping is slightly different then lists because dicts are concerned with pairs (Key : Value)](#looping-is-slightly-different-then-lists-because-dicts-are-concerned-with-pairs-key--value)
+   * [Looping is slightly different then lists because dictionaries are concerned with pairs (Key : Value)](#looping-is-slightly-different-then-lists-because-dictionaries-are-concerned-with-pairs-key--value)
    * [How to loop through keys AND values](#how-to-loop-through-keys-and-values)
 * [Test Your understanding](#test-your-understanding)
 
@@ -41,6 +41,7 @@ In fact, the naming, dictionary, is taken from the physical dictionary in which 
 A word in this physical dictionary is the *key*. And the definition is the *value*.   
 
 ![dict](1.jpg)
+[Source](https://www.pearson.com/us/higher-education/program/Carrano-Data-Structures-and-Abstractions-with-Java-5th-Edition/PGM1912010.html)
 
 Let us go ahead with some dictionary example to represent a car:
 # { }, Dictionary notation, curly braces
@@ -297,7 +298,7 @@ Output:
 ```
 dict_items([('Brand', 'Ford'), ('Model', 'Explorer'), ('Year', '2012'), ('Colors', ['black', 'white', 'red'])])
 ```
-## Looping is slightly different then lists because dicts are concerned with pairs (Key : Value)
+## Looping is slightly different than lists because dictionaries are concerned with pairs (Key : Value)
 ```
 a_car_dict = {
     'Brand': 'Ford',
