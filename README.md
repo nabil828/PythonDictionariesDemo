@@ -1,35 +1,30 @@
 # Python Dictionary Demo
-Here is a list of examples I am going over today:
-- [ ] [Terminology](#Terminology)
-- [ ] [Key/Value pairs definition](#Key/Value-pairs-definition)
-- [ ] [First example (Student using a dictionary)](#First-example (Student-using a-dictionary))
-- [ ] [{ }, Dict notation, curly braces](#{ },-Dict-notation,curly-braces)
-- [ ] [adding elements](#adding-elements)
-- [ ] [[ ] Square-bracket access-of the-dict]([ ] Square-bracket access-of the-dict)
-- [ ] [Accessing a key that does not exist](Accessing-a key-that does-not exist)
-- [ ] [Alternative-to “throwing-an error” if-a key-does not-exist](Alternative-to “throwing-an error” if-a key-does not-exist)
-- [ ] [Sometimes-you will-want to-return None-or a-default value-if key-does not-exist](Sometimes-you will-want to-return None-or a-default value-if key-does not-exist)
-- [ ] [.get( ) access-of the-dict](.get( ) access-of the-dict)
-- [ ] [accessing-a key-that does-not exist-with the .get-method as-opposed to [ ] square-bracket access](accessing-a key-that does-not exist-with the .get-method as-opposed to [ ] square-bracket access)
-- [ ] [Specifying-a default-value for-keys that-do not-exist](Specifying-a default-value for-keys that-do not-exist)
-- [ ] [Adding-a new-entry to-dictionary](Adding-a new-entry to-dictionary)
-- [ ] [Changing/updating-values via-key access](Changing/updating-values via-key access)
-- [ ] [Changing/updating-values via .update() method](Changing/updating-values via .update() method)
-- [ ] [.update() takes-in a-dict as-an argument](.update() takes-in a-dict as-an argument)
-- [ ] [Deleting-a specific-key and-its value](Deleting-a specific-key and-its value)
-- [ ] [Option-1 for-deleting a-key and-value: del-keyword](Option-1 for-deleting a-key and-value: del-keyword)
-- [ ] [Option-2 for-removing a-key and-value: .pop() method](Option-2 for-removing a-key and-value: .pop() method)
-- [ ] [Remember-the .pop() method-not only-removes the-item put-pops it-off or-returns it-to you](Remember-the .pop() method-not only-removes the-item put-pops it-off or-returns it-to you)
-- [ ] [Therefore-you can-recover the-popped item-with a-variable assignment](Therefore-you can-recover the-popped item-with a-variable assignment)
-- [ ] [How-to loop-through all-the keys-and values](How-to loop-through all-the keys-and values)
-- [ ] [Finding-out the-number of-keys in-dict with-len() function](Finding-out the-number of-keys in-dict with-len() function)
-- [ ] [Print-all keys-with .keys() method](Print-all keys-with .keys() method)
-- [ ] [Print-all values-with .values() method](Print-all values-with .values() method)
-- [ ] [Print-both keys-and values-with .items() method](Print-both keys-and values-with .items() method)
-- [ ] [Looping-is slightly-different then-lists because-dicts are-concerned with-pairs (Key : Value)](Looping-is slightly-different then-lists because-dicts are-concerned with-pairs (Key : Value))
-- [ ] [How-to loop-through keys-AND values](How-to loop-through keys-AND values)
+Table of Contents
+=================
 
-..
+* [Terminology](#terminology)
+* [Key/Value pairs definition](#keyvalue-pairs-definition)
+* [{ }, Dict notation, curly braces](#--dict-notation-curly-braces)
+* [Adding elements](#adding-elements)
+* [Get a value of one key using [ ] Square-bracket.](#get-a-value-of-one-key-using---square-bracket)
+* [Accessing a key that does not exist](#accessing-a-key-that-does-not-exist)
+* [Alternative-to “throwing-an error” if-a key-does not-exist by using .get() method to access the dict](#alternative-to-throwing-an-error-if-a-key-does-not-exist-by-using-get-method-to-access-the-dict)
+* [Sometimes you want to return None or a default value if key does not exist](#sometimes-you-want-to-return-none-or-a-default-value-if-key-does-not-exist)
+* [Adding-a new-entry to-dictionary](#adding-a-new-entry-to-dictionary)
+* [Changing/updating values via key access](#changingupdating-values-via-key-access)
+* [Changing/updating-values via .update() method](#changingupdating-values-via-update-method)
+* [Deleting a specific key and its value](#deleting-a-specific-key-and-its-value)
+   * [Option 1 - del keyword](#option-1---del-keyword)
+   * [Option 2 - .pop() method](#option-2---pop-method)
+* [Finding-out the-number of-keys in-dict with-len() function](#finding-out-the-number-of-keys-in-dict-with-len-function)
+* [How-to loop-through all-the keys-and values](#how-to-loop-through-all-the-keys-and-values)
+   * [Print-all keys-with .keys() method](#print-all-keys-with-keys-method)
+   * [Print-all values-with .values() method](#print-all-values-with-values-method)
+   * [Print-both keys-and values-with .items() method](#print-both-keys-and-values-with-items-method)
+   * [Looping-is slightly-different then-lists because-dicts are-concerned with-pairs (Key : Value)](#looping-is-slightly-different-then-lists-because-dicts-are-concerned-with-pairs-key--value)
+   * [How to loop through keys AND values](#how-to-loop-through-keys-and-values)
+
+* [Test Your Understanding](#Test-Your-Understanding)
 
 # Terminology
 
@@ -343,7 +338,33 @@ Year :  2012
 Colors :  ['black', 'white', 'red']
 ```
 
-Sources:
+# Test Your understanding
+Which of the following are true of Python dictionaries:
+- A dictionary can contain any object type except another dictionary.
+- Dictionaries can be nested to any depth.
+- Items are accessed by their position in a dictionary.
+- All the keys in a dictionary must be of the same type.
+- Dictionaries are accessed by key.
+
+
+<details><summary>Answer</summary>
+True statements:
+- Dictionaries can be nested to any depth.
+- Dictionaries are accessed by key.
+
+
+Explanation:
+Python dictionaries are similar to lists in that they are mutable and can be nested to any arbitrary depth (constrained only by available memory).
+
+A dictionary can contain any type of Python object, including another dictionary. The keys in a given dictionary do not need to be the same type as one another, nor do the values.
+
+Dictionary elements are accessed by key. Unlike with list indexing, the order of the items in a dictionary plays no role in how the items are accessed.
+
+Even though dictionary access does not rely on item order, as of version 3.7 the Python language specification does guarantee that the order of items in a dictionary is maintained once the dictionary is created.
+[Source] (https://realpython.com/quizzes/python-dicts/viewer/)
+</details
+
+# Sources & References
 [1](https://www.youtube.com/watch?v=XCcpzWs-CI4&ab_channel=Socratica)
 [2](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
 [3](https://www.tutorialspoint.com/List-vs-tuple-vs-dictionary-in-Python)
