@@ -2,29 +2,29 @@
 Table of Contents
 =================
 
+* [Table of Contents](#table-of-contents)
 * [Terminology](#terminology)
 * [Key/Value pairs definition](#keyvalue-pairs-definition)
-* [{ }, Dict notation, curly braces](#--dict-notation-curly-braces)
+* [{ }, Dictionary notation, curly braces](#--dictionary-notation-curly-braces)
 * [Adding elements](#adding-elements)
 * [Get a value of one key using [ ] Square-bracket.](#get-a-value-of-one-key-using---square-bracket)
 * [Accessing a key that does not exist](#accessing-a-key-that-does-not-exist)
-* [Alternative-to “throwing-an error” if-a key-does not-exist by using .get() method to access the dict](#alternative-to-throwing-an-error-if-a-key-does-not-exist-by-using-get-method-to-access-the-dict)
+* [Alternative-to “throwing-an error” if a key does not exist by using .get() method to access the dictionary](#alternative-to-throwing-an-error-if-a-key-does-not-exist-by-using-get-method-to-access-the-dictionary)
 * [Sometimes you want to return None or a default value if key does not exist](#sometimes-you-want-to-return-none-or-a-default-value-if-key-does-not-exist)
-* [Adding-a new-entry to-dictionary](#adding-a-new-entry-to-dictionary)
+* [Adding a new entry to dictionary](#adding-a-new-entry-to-dictionary)
 * [Changing/updating values via key access](#changingupdating-values-via-key-access)
-* [Changing/updating-values via .update() method](#changingupdating-values-via-update-method)
+* [Changing/updating values via .update() method](#changingupdating-values-via-update-method)
 * [Deleting a specific key and its value](#deleting-a-specific-key-and-its-value)
    * [Option 1 - del keyword](#option-1---del-keyword)
    * [Option 2 - .pop() method](#option-2---pop-method)
-* [Finding-out the-number of-keys in-dict with-len() function](#finding-out-the-number-of-keys-in-dict-with-len-function)
-* [How-to loop-through all-the keys-and values](#how-to-loop-through-all-the-keys-and-values)
-   * [Print-all keys-with .keys() method](#print-all-keys-with-keys-method)
-   * [Print-all values-with .values() method](#print-all-values-with-values-method)
-   * [Print-both keys-and values-with .items() method](#print-both-keys-and-values-with-items-method)
-   * [Looping-is slightly-different then-lists because-dicts are-concerned with-pairs (Key : Value)](#looping-is-slightly-different-then-lists-because-dicts-are-concerned-with-pairs-key--value)
+* [Finding out the number of keys in a dictionary with the len() function](#finding-out-the-number-of-keys-in-a-dictionary-with-the-len-function)
+* [How to loop through all the keys and values](#how-to-loop-through-all-the-keys-and-values)
+   * [Print all keys with .keys() method](#print-all-keys-with-keys-method)
+   * [Print all values with .values() method](#print-all-values-with-values-method)
+   * [Print both keys and values with .items() method](#print-both-keys-and-values-with-items-method)
+   * [Looping is slightly different then lists because dicts are concerned with pairs (Key : Value)](#looping-is-slightly-different-then-lists-because-dicts-are-concerned-with-pairs-key--value)
    * [How to loop through keys AND values](#how-to-loop-through-keys-and-values)
-
-* [Test Your Understanding](#Test-Your-Understanding)
+* [Test Your understanding](#test-your-understanding)
 
 # Terminology
 
@@ -43,7 +43,7 @@ A word in this physical dictionary is the *key*. And the definition is the *valu
 ![dict](1.jpg)
 
 Let us go ahead with some dictionary example to represent a car:
-# { }, Dict notation, curly braces
+# { }, Dictionary notation, curly braces
 We use curly braces to declare dictionaries:
 ```
 a_car_dict = {};
@@ -111,7 +111,7 @@ Process finished with exit code 1
 
 ```
 
-# Alternative-to “throwing-an error” if-a key-does not-exist by using `.get()` method to access the dict
+# Alternative-to “throwing-an error” if a key does not exist by using `.get()` method to access the dictionary
 Throwing an error might not be the ideal action for non existential keys. If you want to return a `None` instead, you may use the dictionary `get()` method.
 ```
 print(a_car_dict.get('Engine'))
@@ -135,7 +135,7 @@ not found
 ```
 
 
-# Adding-a new-entry to-dictionary
+# Adding a new entry to dictionary
 Let us try to add the key, `Engine`, that did not exist:
 ```
 a_car_dict = {    
@@ -170,7 +170,7 @@ Output:
 {'Brand': 'Ford', 'Model': 'Explorer', 'Year': '2013', 'Colors': ['black', 'white', 'red'], 'Engine': '2.3'}
 ```
 
-# Changing/updating-values via .update() method
+# Changing/updating values via .update() method
 We can use the `update` method to update multiple keys at the same time:
 ```
 a_car_dict = {
@@ -231,7 +231,7 @@ Output:
 ```
 Remember that the `.pop()` method not only removes the item but returns it to you]
 
-# Finding-out the-number of-keys in-dict with-len() function
+# Finding out the number of keys in a dictionary with the `len()` function
 ```
 a_car_dict = {
     'Brand': 'Ford',
@@ -248,8 +248,8 @@ Output:
 ```
 
 
-# How-to loop-through all-the keys-and values
-## Print-all keys-with `.keys()` method
+# How to loop through all the keys and values
+## Print all keys with `.keys()` method
 ```
 a_car_dict = {
     'Brand': 'Ford',
@@ -265,7 +265,7 @@ Output:
 dict_keys(['Brand', 'Model', 'Year', 'Colors'])
 ```
 
-## Print-all values-with `.values()` method
+## Print all values with `.values()` method
 ```
 a_car_dict = {
     'Brand': 'Ford',
@@ -281,7 +281,7 @@ Output:
 ```
 dict_values(['Ford', 'Explorer', '2012', ['black', 'white', 'red']])
 ```
-## Print-both keys-and values-with `.items()` method
+## Print both keys and values with `.items()` method
 ```
 a_car_dict = {
     'Brand': 'Ford',
@@ -297,7 +297,7 @@ Output:
 ```
 dict_items([('Brand', 'Ford'), ('Model', 'Explorer'), ('Year', '2012'), ('Colors', ['black', 'white', 'red'])])
 ```
-## Looping-is slightly-different then-lists because-dicts are-concerned with-pairs (Key : Value)
+## Looping is slightly different then lists because dicts are concerned with pairs (Key : Value)
 ```
 a_car_dict = {
     'Brand': 'Ford',
